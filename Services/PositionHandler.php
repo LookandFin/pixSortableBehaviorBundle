@@ -84,7 +84,7 @@ abstract class PositionHandler
             return $this->positionField['entities'][$entity];
 
         } else {
-            return $this->positionField['default'];
+            return $this->positionField['default'] ?? 'position';
         }
     }
 
